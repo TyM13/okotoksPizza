@@ -1,0 +1,31 @@
+nav>a {
+    font-style: italic;
+}
+
+header h1 {
+    text-decoration-line: underline;
+    text-align: center;
+    
+}
+
+#Title+p{
+    text-align: center;
+}
+
+a:link {
+    font-weight: bold;
+    font-size: larger;
+}
+
+a:visited{
+    font-size: small;
+    color: lightcoral;
+}
+
+p:hover{
+    font-size: larger;
+}
+
+#indexImg:active{
+    filter: opacity(0);
+}
