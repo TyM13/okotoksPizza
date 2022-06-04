@@ -29,3 +29,19 @@ p:hover{
 #indexImg:active{
     filter: opacity(0);
 }
+
+
+
+
+#section_one{
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));;
+    gap: 10px;
+}
+
+
+
+div>img{
+width: 40%;
+height: 40%;
+}
