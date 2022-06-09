@@ -18,15 +18,10 @@ header h1 {
 }
 
 nav>a {
-    display: grid;
-    grid-template-columns: 1fr;
     font-style: italic;
     text-align: center;
-    justify-self: center;
+  
 }
-
-
-
 
 a:link {
     font-weight: bold;
@@ -53,7 +48,7 @@ p:hover{
 
 p{
     text-align: center;
-    margin-top: 10px
+    padding-top: 20px;
 }
 
 
@@ -79,21 +74,39 @@ height: 40vh;
 height: 40vh;
 }
 
+#index_promo{
+display: none;    
+}
 
-/* tablet rules below */
+
+/* tablet rules below! */
 
 @media only screen and (min-width: 500px) {
     #indexImg{
     width: 40vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
     }
+
+    #index_promo{
+        display: block; 
+        height: 30vh;  
+        }
+
     #div_one{
         display: grid;
-        grid-template-columns: 1fr;
-        align-content: center;
-        justify-self: center;
+
     }
+    
     a:link{font-size: larger;}
-    }
+   }
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
 
 
 
