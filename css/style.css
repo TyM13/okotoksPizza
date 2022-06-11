@@ -1,14 +1,89 @@
+@keyframes okotokspizza {
+    0% {
+        width: 16.6%;
+        background-color: red;
+        transform: rotate(60deg);
+        padding: 20px;
+    }
+
+    20% {
+        width: 33.3%;
+        background-color: orange;
+        transform: rotate(120deg);
+        padding: 20px;
+    }
+
+    40% {
+        width: 49.9%;
+        background-color: yellow;
+        transform: rotate(180deg);
+        padding: 20px;
+    }
+
+    60% {
+        width: 66.5%;
+        background-color: green;
+        transform: rotate(240deg);
+        padding: 20px;
+    }
+
+    80% {
+        width: 83.1%;
+        background-color: blue;
+        transform: rotate(300deg);
+        padding: 20px;
+    }
+
+    100% {
+        width: 100%;
+        background-color: violet;
+        transform: rotate(360deg);
+        padding: 20px;
+    }
+}
+
+#index_promo:active{
+    animation: okotokspizza 1s linear ;
+}
+
+/* Above is animation for index picture */
+
+
+.background_color{
+    transition: all 1s ease-in-out;
+}
+
+.background_color:hover{
+    box-shadow: 10px 10px rgba(10, 10, 10, 0.377);
+
+}
+
+/* above us for menu picture hover */
+
+#indexImg{
+    transition: all 1s ease-in-out;
+}
+
+#indexImg:hover{
+    border-radius: 40%;
+}
+
+/* end of animations */
+
 * {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: beige;
     display: grid;
     grid-template-columns: 1fr;
 }
+
+
 header h1 {
+    display: grid;
     text-decoration-line: underline;
     text-align: start;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -17,10 +92,11 @@ header h1 {
     padding-top: 5px;
 }
 
+
 nav>a {
     font-style: italic;
     text-align: center;
-  
+
 }
 
 a:link {
@@ -28,94 +104,99 @@ a:link {
     font-size: medium;
 }
 
-a:visited{
+a:visited {
     font-size: small;
-    color: lightcoral;
+    color: rgba(93, 160, 247, 0.959);
 }
 
-p:hover{
+p:hover {
     font-size: larger;
 
 }
 
-#indexImg:active{
+#indexImg:active {
     filter: opacity(0);
 }
 
-#indexP_one{
+#indexP_one {
     padding-bottom: 10px;
 }
 
-p{
+p {
     text-align: center;
     padding-top: 20px;
 }
 
 
-#section_one{
+#section_one {
     display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(300px, 1fr));;
-    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    ;
+    gap: 20px;
 }
 
-#indexImg{
+#indexImg {
     padding-top: 20px;
-    }
-
-
-
-div>img{
-width: 100%;
-height: 40vh;
 }
 
-#contact_usImg{
+
+
+div>img {
+    width: 100%;
+    height: 40vh;
+}
+
+#contact_usImg {
     width: 90%;
-height: 40vh;
+    height: 40vh;
 }
 
-#index_promo{
-display: none;    
+#index_promo {
+    display: none;
 }
 
 
 /* tablet rules below! */
 
 @media only screen and (min-width: 500px) {
-    #indexImg{
-    width: 40vw;
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-self: center;
+    #indexImg {
+        width: 40vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-self: center;
     }
 
-    #index_promo{
-        display: block; 
-        height: 30vh;  
-        }
+    #index_promo {
+        display: block;
+        height: 30vh;
+    }
 
-    #div_one{
+    #div_one {
         display: grid;
 
     }
-    
-    a:link{font-size: larger;}
-   }
-nav{
+
+    a:link {
+        font-size: larger;
+    }
+}
+
+nav {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+
 }
 
 
 
 
 
-    /* Desktop rules below */
 
-    @media only screen and (min-width: 1000px) {
-        
-        a:link{
-            font-size: x-large;
-        }
-        }
+/* Desktop rules below */
+
+@media only screen and (min-width: 1000px) {
+
+    a:link {
+        font-size: x-large;
+    }
+}
