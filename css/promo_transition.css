@@ -1,0 +1,82 @@
+@-webkit-keyframes okotokspizza {
+  0% {
+    width: 16.6%;
+    background-color: red;
+    transform: rotate(60deg);
+    padding: 20px;
+  }
+  20% {
+    width: 33.3%;
+    background-color: orange;
+    transform: rotate(120deg);
+    padding: 20px;
+  }
+  40% {
+    width: 49.9%;
+    background-color: yellow;
+    transform: rotate(180deg);
+    padding: 20px;
+  }
+  60% {
+    width: 66.5%;
+    background-color: green;
+    transform: rotate(240deg);
+    padding: 20px;
+  }
+  80% {
+    width: 83.1%;
+    background-color: blue;
+    transform: rotate(300deg);
+    padding: 20px;
+  }
+  100% {
+    width: 100%;
+    background-color: violet;
+    transform: rotate(360deg);
+    padding: 20px;
+  }
+}
+@keyframes okotokspizza {
+  0% {
+    width: 16.6%;
+    background-color: red;
+    transform: rotate(60deg);
+    padding: 20px;
+  }
+  20% {
+    width: 33.3%;
+    background-color: orange;
+    transform: rotate(120deg);
+    padding: 20px;
+  }
+  40% {
+    width: 49.9%;
+    background-color: yellow;
+    transform: rotate(180deg);
+    padding: 20px;
+  }
+  60% {
+    width: 66.5%;
+    background-color: green;
+    transform: rotate(240deg);
+    padding: 20px;
+  }
+  80% {
+    width: 83.1%;
+    background-color: blue;
+    transform: rotate(300deg);
+    padding: 20px;
+  }
+  100% {
+    width: 100%;
+    background-color: violet;
+    transform: rotate(360deg);
+    padding: 20px;
+  }
+}
+#index_promo:active {
+  -webkit-animation: okotokspizza 1s linear;
+          animation: okotokspizza 1s linear;
+}
+
+/* Above is animation for index picture *//*# sourceMappingURL=promo_transition.css.map */

@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: beige;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@-webkit-keyframes okotokspizza {
+  0% {
+    width: 16.6%;
+    background-color: red;
+    transform: rotate(60deg);
+    padding: 20px;
+  }
+  20% {
+    width: 33.3%;
+    background-color: orange;
+    transform: rotate(120deg);
+    padding: 20px;
+  }
+  40% {
+    width: 49.9%;
+    background-color: yellow;
+    transform: rotate(180deg);
+    padding: 20px;
+  }
+  60% {
+    width: 66.5%;
+    background-color: green;
+    transform: rotate(240deg);
+    padding: 20px;
+  }
+  80% {
+    width: 83.1%;
+    background-color: blue;
+    transform: rotate(300deg);
+    padding: 20px;
+  }
+  100% {
+    width: 100%;
+    background-color: violet;
+    transform: rotate(360deg);
+    padding: 20px;
+  }
+}
+@keyframes okotokspizza {
+  0% {
+    width: 16.6%;
+    background-color: red;
+    transform: rotate(60deg);
+    padding: 20px;
+  }
+  20% {
+    width: 33.3%;
+    background-color: orange;
+    transform: rotate(120deg);
+    padding: 20px;
+  }
+  40% {
+    width: 49.9%;
+    background-color: yellow;
+    transform: rotate(180deg);
+    padding: 20px;
+  }
+  60% {
+    width: 66.5%;
+    background-color: green;
+    transform: rotate(240deg);
+    padding: 20px;
+  }
+  80% {
+    width: 83.1%;
+    background-color: blue;
+    transform: rotate(300deg);
+    padding: 20px;
+  }
+  100% {
+    width: 100%;
+    background-color: violet;
+    transform: rotate(360deg);
+    padding: 20px;
+  }
+}
+#index_promo:active {
+  -webkit-animation: okotokspizza 1s linear;
+  animation: okotokspizza 1s linear;
+}
+
+/* Above is animation for index picture */
+/*# sourceMappingURL=promo_transition.css.map */
+.background_color {
+  transition: all 1s ease-in-out;
+}
+
+.background_color:hover {
+  box-shadow: 10px 10px rgba(10, 10, 10, 0.377);
+}
+
+/* above us for menu picture hover */
+#indexImg {
+  transition: all 1s ease-in-out;
+}
+
+#indexImg:hover {
+  border-radius: 40%;
+}
+
+/* end of animations */
+#index_header {
+  display: grid;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  text-align: start;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgba(255, 0, 0, 0.205);
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+/* Links for website*/
+nav > a {
+  font-style: italic;
+  text-align: center;
+}
+
+a:link {
+  font-weight: bold;
+  font-size: medium;
+}
+
+a:visited {
+  font-size: small;
+  color: rgba(93, 160, 247, 0.959);
+}
+
+/*above are links for website */
+p:hover {
+  font-size: larger;
+}
+
+#indexImg:active {
+  filter: opacity(0);
+}
+
+#indexP_one {
+  padding-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#section_one {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+#indexImg {
+  padding-top: 20px;
+}
+
+div > img {
+  width: 100%;
+  height: 40vh;
+}
+
+#contact_usImg {
+  width: 90%;
+  height: 40vh;
+}
+
+#index_promo {
+  display: none;
+}
+
+/* tablet rules below! */
+@media only screen and (min-width: 500px) {
+  #indexImg {
+    width: 40vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-self: center;
+  }
+
+  #index_promo {
+    display: block;
+    height: 30vh;
+  }
+
+  #div_one {
+    display: grid;
+  }
+
+  a:link {
+    font-size: larger;
+  }
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Desktop rules below */
+@media only screen and (min-width: 1000px) {
+  a:link {
+    font-size: x-large;
+  }
+}/*# sourceMappingURL=style.css.map */

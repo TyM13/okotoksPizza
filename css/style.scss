@@ -1,52 +1,6 @@
-@keyframes okotokspizza {
-    0% {
-        width: 16.6%;
-        background-color: red;
-        transform: rotate(60deg);
-        padding: 20px;
-    }
+@use "general";
+@use "promo_transition";
 
-    20% {
-        width: 33.3%;
-        background-color: orange;
-        transform: rotate(120deg);
-        padding: 20px;
-    }
-
-    40% {
-        width: 49.9%;
-        background-color: yellow;
-        transform: rotate(180deg);
-        padding: 20px;
-    }
-
-    60% {
-        width: 66.5%;
-        background-color: green;
-        transform: rotate(240deg);
-        padding: 20px;
-    }
-
-    80% {
-        width: 83.1%;
-        background-color: blue;
-        transform: rotate(300deg);
-        padding: 20px;
-    }
-
-    100% {
-        width: 100%;
-        background-color: violet;
-        transform: rotate(360deg);
-        padding: 20px;
-    }
-}
-
-#index_promo:active{
-    animation: okotokspizza 1s linear ;
-}
-
-/* Above is animation for index picture */
 
 
 .background_color{
@@ -70,19 +24,10 @@
 
 /* end of animations */
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: beige;
-    display: grid;
-    grid-template-columns: 1fr;
-}
 
 
-header h1 {
+
+#index_header {
     display: grid;
     text-decoration-line: underline;
     text-align: start;
@@ -92,7 +37,7 @@ header h1 {
     padding-top: 5px;
 }
 
-
+/* Links for website*/
 nav>a {
     font-style: italic;
     text-align: center;
@@ -108,6 +53,8 @@ a:visited {
     font-size: small;
     color: rgba(93, 160, 247, 0.959);
 }
+
+/*above are links for website */
 
 p:hover {
     font-size: larger;
